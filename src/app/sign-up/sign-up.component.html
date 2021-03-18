@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Login Page</h1>
+    <h1>SignUp Page </h1>
     <form #signupF = "ngForm"  (ngSubmit)="onSubmit()"   novalidate >
 
         {{signupF.value | json}}
@@ -35,6 +35,6 @@
             <input type="password" class="form-control" id="rPwd" name="rPassword" [(ngModel)] = signupForm.rPassword>
         </div>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">SignUp</button>
     </form>
   </div>
