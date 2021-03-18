@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>Login Page</h1>
+    <form #signupF = "ngForm"  (ngSubmit)="onSubmit()"   novalidate >
+
+        {{signupF.value | json}}
+        <!-- Username  -->
+        <hr>
+        {{signupForm | json}}
+        <div class="form-group">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr" name="name" [(ngModel)] = signupForm.name>
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)] = signupForm.email>
+        </div>
+
+        <!-- Phone Number  -->
+        <div class="form-group">
+            <label for="pNo">Phone:</label>
+            <input type="text" class="form-control" id="pNo" name="phone" [(ngModel)] = signupForm.phone>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password" [(ngModel)] = signupForm.password>
+        </div>
+
+        <!-- Re-Enter Password -->
+        <div class="form-group">
+            <label for="rPwd">Re-Enter Password:</label>
+            <input type="password" class="form-control" id="rPwd" name="rPassword" [(ngModel)] = signupForm.rPassword>
+        </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
